@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			margin:0;
+		}
+		body{
+			font-size: 20px;
+			font-family: sans-serif;
+			font-weight: bold;
+		}
+		.page{
+			padding: 50px 20px;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		.buttons_menu{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+		.input{
+			width: 100px;
+			height: 50px;
+			background-color: #ccc;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: 0.5s;
+			color: #000;
+			border-radius: 5px;
+			margin:0 15px;
+		}
+		.input:hover{
+			cursor: pointer;
+			background-color: dodgerblue;
+			color: #fff;
+		}
+		.file_load{
+			display: none;
+		}
+		.canvas{
+			background-color: #ccc;
+			width: 500px;
+			height: 420px;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="page">
+		<div class="buttons_menu">
+			<label class="input">
+				<p>Click</p>
+				<input type="file" class="file_load">
+			</label>
+			<label class="input">
+				<p>Click</p>
+				<input type="file" class="file_load">
+			</label>
+		</div>
+		<canvas class="canvas" id="canvas"></canvas>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
